@@ -1,0 +1,265 @@
+/*定义链接样式*/
+
+.link_b:link {color: #ffffff;}
+.link_b:visited {color: #ffffff;}
+.link_b:hover {color: #ffffff;}
+
+.link_a:link {color: #000000;}
+.link_a:visited {color: #454545;}
+.link_a:hover {color: #666666;}
+
+.link_c:link {color: #000000;}
+.link_c:visited {color: #999999;}
+.link_c:hover {	color: #cc2900;}
+
+
+.link_d:link {color: #ff6600;}
+.link_d:visited {color: #ff6600;}
+.link_d:hover {	color: #000000;}
+
+.link_e:link {color: #000000;}
+.link_e:visited {color: #000000;}
+.link_e:hover {	color: #ff6600;}
+
+.link_f:link {color: #cc2900;}
+.link_f:visited {color: #cc2900;}
+.link_f:hover {	color: #000000;}
+
+.link_g:link {color: #888888;}
+.link_g:visited {color: #888888;}
+.link_g:hover {	color: #cc2900;}
+
+/*定义字体样式*/
+
+.lan12_02 {
+	font-size: 12px;
+	line-height: normal;
+	color: #004368;
+}
+.juhuang_14_b {
+	font-size: 14px;
+	font-weight: bold;
+	color: #FF7933;
+}
+.bai_14_b {
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.bai_12_05 {
+	font-size: 12px;
+	color: #FFFFFF;
+}
+
+
+/*定义表单样式*/
+
+.biaodan_wenbenkuang {
+	border-top-color: #333333;
+	border-right-color: #D8D8D8;
+	border-bottom-color: #D8D8D8;
+	border-left-color: #333333;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-top-width: 1px;
+	border-left-width: 1px;
+}
+.biaodan_anniu {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-color: #CCCCCC;
+	border-right-color: #333333;
+	border-bottom-color: #333333;
+	border-left-color: #CCCCCC;
+	background-color: #FFFFFF;
+	font-size: 12px;
+	height: 20px;
+	width: 48px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	padding-left: 1px;
+}
+
+/*定义表格样式*/
+
+.biaoge1 {
+	font-size: 12px;
+	line-height: 20px;
+	color: 0B5A87;
+	background-color: #FFFFFF;
+	text-align: left;
+	vertical-align: middle;
+	border: none;
+	margin: auto;
+	padding-right: 8px;
+	padding-left: 8px;
+}
+
+.biaoge1_wenzi {
+	font-size: 12px;
+	line-height: 20px;
+	color: 0B5A87;
+	background-color: DAEAF2;
+	text-align: left;
+	vertical-align: middle;
+	border: none;
+	margin: auto;
+	padding-right: 8px;
+	padding-left: 8px;
+}
+
+.biaoge2 {
+	background-color: #FFFFFF;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.biaoge3 {
+	padding-right: 10px;
+	padding-left: 10px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-align: left;
+	vertical-align: middle;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	line-height: 20px;
+}
+.hei_12 {
+	font-size: 12px;
+	color: #000000;
+}
+.hei_12_b {
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+}
+.hong_12 {
+	font-size: 12px;
+	color: #FF0000;
+}
+.hong_14 {
+	font-size: 14px;
+	color: #FF0000;
+}
+.hong_14_b {
+	font-size: 14px;
+	font-weight: bold;
+	color: #FF0000;
+}
+.hong2_14_b {
+	font-size: 14px;
+	font-weight: bold;
+	color: #cc2900;
+}
+
+.hei_14_28h {
+	font-size: 14px;
+	line-height: 28px;
+}
+
+.hei_14_27h {
+	font-size: 14px;
+	line-height: 26px;
+}
+.juhuang_12 {
+	font-size: 12px;
+	color: #FF6600;
+}
+.juhuang {
+	color: #FF6600;
+}
+.hui_12 {
+	font-size: 12px;
+	color: #AAAAAA;
+}
+
+
+.biaodan_anniu2 {
+
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-color: #CCCCCC;
+	border-right-color: #333333;
+	border-bottom-color: #333333;
+	border-left-color: #CCCCCC;
+	background-color: #FFFFFF;
+	font-size: 12px;
+	height: 20px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	padding-left: 1px;
+}
+.lan_14_02_b {
+	font-size: 14px;
+	font-weight: bold;
+	color: 004368;
+}
+.biaoge_wenzijuzhong {
+	padding: 6px 0px 0px 12px;
+}
+.lan02_12_b {
+	font-size: 12px;
+	font-weight: bold;
+	color: #004368;
+}
+.biaoge_3 {
+	border: 1px;
+	margin: 0px;
+}
+.biaoge_4 {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+.biaodan_anniu3 {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-color: #CCCCCC;
+	border-right-color: #333333;
+	border-bottom-color: #333333;
+	border-left-color: #CCCCCC;
+	background-color: #FFFFFF;
+	font-size: 12px;
+	height: 20px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	padding-left: 1px;
+	color: #FF6600;
+}
+.biaodan_anniu4_lan {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-color: #CCCCCC;
+	border-right-color: #333333;
+	border-bottom-color: #333333;
+	border-left-color: #CCCCCC;
+	background-color: #FFFFFF;
+	font-size: 12px;
+	height: 20px;
+	width: 48px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	padding-left: 1px;
+	color: #004368;
+}
+.lan12_03 {
+	font-size: 12px;
+	color: 0065A3;
+	line-height: 20px;
+}
+.lan12_02_1 {
+
+	font-size: 12px;
+	line-height: 16px;
+	color: #004368;
+}
