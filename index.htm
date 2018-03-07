@@ -1,0 +1,719 @@
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<title>随书光盘检索中心</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script src="js/webThunderDetect.js" "poweb/js/webThunderDetect.js"></script>
+<script src="js/base64.js" "poweb/js/base64.js"></script>
+<SCRIPT src="jquery/jquery.js" "poweb/jquery/jquery.js" type=text/javascript></SCRIPT>
+<SCRIPT src="jquery/jquery[1].jsonp-1.0.4.min.js" "poweb/jquery/jquery[1].jsonp-1.0.4.min.js" type=text/javascript></SCRIPT>   
+<script src="js/checkform.js" "poweb/js/checkform.js"></script>
+<script src="js/psxmlfirfox.js" "poweb/js/psxmlfirfox.js"></script>
+<script src="js/fun.js" "poweb/js/fun.js"></script>
+<script src="js/runiso.js" "poweb/js/runiso.js"></script>
+<script src="js/protocolcaller.js" "poweb/js/protocolcaller.js"></script>
+
+<style type="text/css">
+<!--
+body { 
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #2375a6;
+}
+-->
+.divcss {
+	position:absolute;
+	width:374px;
+	height:212px;
+	z-index:1;
+	left: 550px;
+	top: 300px;
+}
+
+</style>
+<script type="text/javascript">
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<link href="css/admin_css.css" "poweb/css/admin_css.css" rel="stylesheet" type="text/css">
+</head>
+
+
+
+  
+  
+    <body onLoad="theupdata()">
+  
+
+
+<table style="display:none">
+	<tr>
+		<td></td>
+	</tr>
+</table>
+ <input type="hidden" value="1" id="locisocount"> <!-- 本地资源光盘个数 showpage-->
+ <input type="hidden" value="210.32.137.198:80/||cd.hbdlib.cn:80/||202.38.93.29:80/||202.204.214.120:80/||202.121.183.75:80/poweb||202.115.54.45:8080/poweb||202.198.141.81:80/poweb||202.112.20.61:80/||202.120.199.68:80/||166.111.120.132:80/poweb||162.105.138.156:80/poweb||202.114.65.185:80/poweb||202.197.69.15:8080/poweb||202.197.127.229:80/poweb||210.37.32.4:80/||58.194.172.26:80/||www.metamed.com.cn:8080/poweb||202.192.41.9:8080/poweb||202.107.224.28:80/||222.29.253.58:8080/poweb||61.175.198.137:80/||202.107.242.5:9091/poweb||202.114.65.3:80/" id="ccenterserver"> <!-- 中心服务器ip地址等信息 -->
+ <input type="hidden" id="isxunlaidown" value="1">  <!--是否允许迅雷下载 -->
+ <input type="hidden" id="WebShowRun" value="0">  <!--是否允许显示下载安钮 -->
+ <input type="hidden" id="isregcenter" value="0">  
+ <input type="hidden" id="XunLanDownType" value="1">  <!--迅雷下载时通过FTP方式还是HTTP方式  0：FTP 1：HTTP -->
+ <input type="hidden" id="thetitle" value="CATIA V5R20中文版完全自学一本通">   
+ <input type="hidden" id="ResourceSys" value="0">   <!--表示是省中心还是本地  0：本地  1：中心 -->
+ <input type="hidden" id="isopacurl" value="0">   <!--是否从openurl链接过来的  0：不是  1：是 -->
+ <input type="hidden" id="CountryCenterUrl" value="http://www.metacd.com/">   
+ <input type="hidden" id="ISCountryCenter" value="0">
+  <input type="hidden" id="SchoolCode" value="171024"> <!-- 学校代码 -->
+ <input type="hidden" id="Ischeckareadownload" value="1">
+<table width="700" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+    <td height="50" align="left" valign="middle" class="bai_12_05"> </td>
+    <td align="left" valign="middle" class="bai_12_05"><span class="lan_14_02_b"><a href="http://210.32.137.198/download/Setup_WebClient.exe" class="link_d">虚拟光盘软件下载</a></span></td>
+  </tr>
+</tbody></table>
+<map name="Map2">
+  <area shape="rect" coords="710,3,769,22" href="#">
+  <area shape="rect" coords="644,3,703,22" href="#"><area shape="rect" coords="578,3,637,22" href="#">
+  <area shape="rect" coords="512,3,571,22" href="#">
+</map>
+<table width="700" border="0" align="center" cellpadding="0" cellspacing="0"  background="images/new4.0_01.gif" "poweb/images/new4.0_01.gif">
+ 
+  
+	
+	<td height="60" align="center" valign="middle" class="lan_14_02_b"  style="table-layout:word-wrap:break-word;word-break:break-all">
+      请输入ISBN号 
+      <input type="text" id="isbn">
+      <span class="lan_14_02_b" style="table-layout:word-wrap:break-word;word-break:break-all"><a onClick="SearchCountryCenter_Json()" target="_blank" style="cursor:hand" title="提交后单击此按钮，查找光盘云中的资源"><img src="images/new4.0_12.gif"" width="125" height="40" border="0" align="middle" "poweb/images/new4.0_12.gif></a></span></td>
+
+
+	<td align="right" valign="bottom" class="lan_14_02_b"><div align="center"></div></td>
+ 
+</table>
+
+
+
+<table width="700" border="0" align="center" cellpadding="0" cellspacing="0"  background="images/new4.0_02.gif" "poweb/images/new4.0_02.gif" id="showiso_tb">
+
+
+
+  <tr>
+
+    <td height="20"   >
+    
+    <table width="700" border="0" align="center" cellpadding="0" cellspacing="0" background="images/new4.0_19.gif" "poweb/images/new4.0_19.gif">
+      <tr>
+        <td width="180" height="180" align="center" valign="middle" class="lan_14_02_b"><a title="本地资源"><img src="images/new4.0_21.gif" "poweb/images/new4.0_21.gif" width="120" height="140"></a></td>
+        <td width="520" align="left" valign="bottom" class="lan_14_02_b">
+        <table width="518" border="0" cellpadding="0" cellspacing="0" class="hei_14_28h">
+           <tr>
+            <td height="20" colspan="2"></td>
+          </tr>       
+          <tr>
+          
+            <td height="100" colspan="2" valign="top"  background="images/new4.0_19_01.gif" "poweb/images/new4.0_19_01.gif" >
+             使用前，请安装虚拟光盘软件。<br>输入ISBN后，点击云中心查找。<br>
+			 本系统仅供测，如需下载请使用正版系统。
+               
+              </td>
+          </tr>
+        
+         
+        </table>
+        </td>
+        </tr>
+
+
+
+
+      <tr>
+        <td height="6" colspan="2" align="center" valign="middle" class="lan_14_02_b" background="images/new4.0_20.gif" "poweb/images/new4.0_20.gif"></td>
+        </tr>
+    </table>
+    
+    <div id="isorestable"></div>
+    <div id="isorestableyun"></div> 
+    </td>
+     
+  </tr>
+  <tr>
+  <td id="noisotd" style="display:none">
+     <table width="700" border="0" align="center" cellpadding="0" cellspacing="0" background="images/new4.0_19.gif" "poweb/images/new4.0_19.gif">
+        <tr id="noisodisp">
+          <td height="180" align="center" valign="middle" class="lan_14_02_b" > <span id="noisospan">暂无可用资源，请<a style="text-decoration:underline; cursor: pointer;" onClick="javascript:document.getElementById('feedbackdiv').style.display='';" class="juhuang_14_b">提交请求</a></span> ！</td>
+        </tr>
+     
+        <tr id="findisotr" style="display: none">
+          <td height="180" align="center" valign="middle" class="lan_14_02_b"><img src="images/new4.0_yun.gif" "poweb/images/new4.0_yun.gif" width="340" height="40" border="0"/></td>
+        </tr>     
+           
+        <tr>
+          <td height="6" align="center" valign="middle" class="lan_14_02_b" background="images/new4.0_20.gif" "poweb/images/new4.0_20.gif"></td>
+        </tr>
+    </table>
+  </td>
+  </tr>
+  <tr>
+    <td height="50" align="center" valign="bottom" class="hei_14_28h"><a style="cursor:hand" target="_blank" class="link_a" onClick="javascript:window.close()">关 闭 本 页</a></td>
+  </tr>
+</table>
+<table width="700" border="0" align="center" cellpadding="5" cellspacing="0"  background="images/new4.0_03.gif" "poweb/images/new4.0_03.gif">
+  <tr>
+  </tr>
+
+</table>
+
+<div id="feedbackdiv" style="display:none" class="divcss">
+      <table width="362" border="0" cellpadding="0" cellspacing="0" background="images/new4.0_11_1.gif" "poweb/images/new4.0_11_1.gif"  onkeydown="if(event.keyCode==13) savefeedback('13933','','')">
+        <tr>
+          <td height="168" align="center" valign="middle"><table border="0" cellpadding="2" cellspacing="0" class="hei_12">
+            <tr>
+              <td height="50" valign="bottom">选择问题：</td>
+              <td valign="bottom">
+	           <select name="fbtypesel" id="fbtypesel">
+	           
+	            <option value="2">无法下载</option>
+	            <option value="3">下载后无法使用</option>
+	           </select>
+              </td>
+            </tr>
+              <!-- 表示只有允许显示反馈按钮时才需要输入邮箱地址 -->
+            <tr>
+              <td height="30" valign="bottom">您的邮箱：</td>
+              <td valign="bottom"><input type="text" name="emailtxt" id="emailtxt"></td>
+            </tr>
+            
+            <tr>
+              <td height="40" align="center" valign="bottom">&nbsp;</td>
+              <td align="left" valign="bottom"><input type="button" name="button" id="button" value=" 发送 " onClick="savefeedback('13933','','')">
+                <input type="button" name="button2" id="button2" value=" 取消 " onClick="javascript:document.getElementById('feedbackdiv').style.display='none';"></td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+ </div>
+ 
+ <div id="returndiv"  style="display:none" class="divcss" >
+      <table width="362" border="0" cellpadding="0" cellspacing="0" background="images/new4.0_11_1.gif" "poweb/images/new4.0_11_1.gif">
+        <tr>
+          <td height="168" align="center" valign="middle">
+          <table border="0" cellpadding="2" cellspacing="0" class="hei_12">
+            <tr>
+              <td height="50" valign="bottom">
+                 <img id="returnimg" src="images/succeed.gif" "poweb/images/succeed.gif" width="80" height="80"/>
+              </td>
+              <td> <span class="juhuang_14_b" id="returninfo">反馈信息提交成功！</span></td>
+            </tr>
+      
+            <tr>
+              <td height="40" align="center" valign="bottom">&nbsp;</td>
+              <td align="right" valign="bottom">
+                <input type="button" name="button2" id="button2" value=" 关闭窗口 " onClick="javascript:document.getElementById('returndiv').style.display='none';"></td>
+            </tr>
+          </table>
+          </td>
+        </tr>
+      </table>
+ </div>
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <xbasehref="http://202.206.242.26:80/poweb/">
+    
+    <title>My JSP 'globdiv.jsp' starting page</title>
+    
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+     <link rel="stylesheet" type="text/css" href="css/box.css" tppabs="http://202.206.242.26/poweb/css/box.css"/>
+  </head>
+  
+  <body>
+   <div class="box" id="isoerror_div" style="display:none" >
+    <input type="hidden" value="" id="runisourl" />
+	<a class="close" onClick="javascript:$('#isoerror_div').hide()" style="cursor:hand"><img src="images/close.jpg" tppabs="http://202.206.242.26/poweb/images/close.jpg" border="0"/></a>
+    <div class="con">
+    	<p>您可能还未安装最新的ProG插件，不能运行或下载光盘资源，请点击<a href="javascript:if(confirm('http://202.206.242.26/poweb/download/Setup_WebClient.exe  \n\nļ޷ Teleport Ultra , Ϊ , , Ŀֹͣ  \n\nڷϴ?'))window.location='http://202.206.242.26/poweb/download/Setup_WebClient.exe'" tppabs="http://202.206.242.26/poweb/download/Setup_WebClient.exe" class="link_g" style="color:red">ProG下载</a>，&nbsp;&nbsp;如果确定已安装请点击<a  href="javascript:continueruniso();" class="link_g" style="color:red">已安装继续执行</a>！<br/> </p>
+    </div>
+    <a class="btn" onClick="javascript:$('#isoerror_div').hide()" style="cursor:hand"><img src="images/btn.jpg" tppabs="http://202.206.242.26/poweb/images/btn.jpg" border="0"/></a>
+     <!-- <a class="btn1" onclick="continueruniso();" style="cursor:hand"><img src="images/btn_run.jpg" border="0"/></a> -->
+   </div >
+   <div id="error1_div" style="display:none;position:absolute;" >
+              <p>如果您不能够正常运行和下载光盘资源，请先<a href="javascript:if(confirm('http://202.206.242.26/poweb/download/Setup_WebClient.exe  \n\nļ޷ Teleport Ultra , Ϊ , , Ŀֹͣ  \n\nڷϴ?'))window.location='http://202.206.242.26/poweb/download/Setup_WebClient.exe'" tppabs="http://202.206.242.26/poweb/download/Setup_WebClient.exe" class="link_g" style="color:red">下载最新ProG</a>！</p>
+   </div>
+  </body>
+</html>
+ 
+<body>&nbsp;
+</body>
+</html>
+
+<script type="text/javascript">
+
+//下载或运行光盘  2013-5-16  runtype：run 表示运行 ; download 下载
+// flag  1：表示从本地访问  0：表示从外地访问，-1：表示从全国中心访问   记录日志时需要
+function RunIso(WEBSTR,ISOID,flag,runtype)
+{
+     var tempwebstr= GetRunUrl(WEBSTR,ISOID,flag,runtype)
+    $("#runisourl").val(tempwebstr)
+   	if(navigator.userAgent.indexOf("Firefox")>0)
+	{ 
+	    var protocaller_url=tempwebstr; // GetRunUrl(WEBSTR,ISOID,flag,runtype)
+	   // alert(protocaller_url)
+        var caller = new protocolcaller();
+        caller.callForFF(protocaller_url,function()
+        { 
+          },function(){
+             displayerrordiv(ISOID,flag)  //弹出错误信息
+          });
+     } 
+     else
+     {
+          
+  		  var testflag=CheckOcx_ie();
+  		 
+          if(testflag!="false")
+	      {
+	       
+	        if(testflag=="true")
+	        {
+	          displayothererrordiv(ISOID,flag)
+	        }  
+	        submitiso(tempwebstr,"")
+	        
+	        
+	         
+	      }
+	      else
+	      {
+             displayerrordiv(ISOID,flag) //弹出错误信息	      
+	      }
+         
+     }
+ }
+
+
+function GetRunUrl(WEBSTR,ISOID,flag,runtype)
+{
+
+		var tempwebstr=WEBSTR;
+		if(WEBSTR=="")  //表示本地的盘
+		{
+			var urlstr=document.location.href
+			var iplist=urlstr.split("http://202.206.242.26/poweb/showpage.do");
+			if(iplist.length==1)
+				iplist=urlstr.split("openurl");
+			tempwebstr=iplist[0];
+	
+		}
+		 var accid= "0";  
+		 var ischeckarea= "1";  //是否启动区域控制 0：启动 1 ：不启动
+		tempwebstr=tempwebstr+"/runisofile?ISOID="+ISOID+"&Accid="+accid+"&RunType="+runtype+"&flag="+flag;   
+		if(runtype=="download") //表示是下载的
+		{
+		  tempwebstr=tempwebstr+"&ischeckarea="+ischeckarea;
+		}
+		tempwebstr=tempwebstr+"&lmflag=1"; //lmflag参数主要是为了防止参数传到start时后面跟乱码
+		//alert(tempwebstr)
+	    tempwebstr=base64encode(tempwebstr);
+	    tempwebstr='proonefile:/'+tempwebstr;
+	    return tempwebstr
+	
+}
+
+
+
+
+function RunISOClick(ISOID)
+{
+ // var setupflag=checksetupprog()
+  //alert(ISOID)
+  var setupflag=ExecProgram()
+  if(setupflag==true)   //表示有安装prog
+  {
+	var i,j,num;
+	 var tempisoid,tempdrive;
+	  num=document.getElementsByName("Thedrive").length;
+	  var j=0
+	  //alert(num);
+	  if (num>0)
+	  {
+		  for(i=0;i<num;i++)
+		  {
+			tempisoid=document.getElementsByName("Thedrive")[i].tempname;
+			//alert(tempisoid);
+			tempdrive=document.getElementsByName("Thedrive")[i].value;
+			//alert(tempdrive)
+			if(ISOID==tempisoid)
+			{
+			  
+			   tempdrive=document.getElementsByName("Thedrive")[i].value;
+			   j=i;
+			  break;
+			}
+			
+		  }
+	   }
+	  window.location.href="RunISO?ISOID="+ISOID+"&Drive="+tempdrive+"&flag=0";
+  }
+  
+  
+}
+ function WebRunISOClick(WEBSTR,ISOID,flag,filesize)  //filesize:光盘大小    filename:光盘文件名
+{
+	 if(flag=="-1")
+	 {
+	      var j=GetCoordFlag_center(ISOID)
+	      var isovolume=document.getElementsByName("isovolume_center")[j].value
+	      AddSynchrRes(filesize,isovolume,"202") //加入到同步请求表
+	 }
+	 RunIso(WEBSTR,ISOID,flag,"run") //新的运行方式
+	 //  window.open(WEBSTR+"RunISO?ISOID="+ISOID+"&Drive="+tempdrive+"&flag="+flag);
+	 //  window.location.href=WEBSTR+"RunISO?ISOID="+ISOID+"&Drive="+tempdrive+"&flag="+flag;
+ 
+    
+ 
+
+ }
+ 
+ 
+ 
+ 
+ function DownISOClick(WEBSTR,ISOID,flag,filesize)
+ {
+ 
+ //  var ischeckarea= "1";  //是否启动区域控制 0：启动 1 ：不启动
+   if(flag==-1)
+    {
+      var j=GetCoordFlag_center(ISOID)
+      var isovolume=document.getElementsByName("isovolume_center")[j].value;
+       AddSynchrRes(filesize,isovolume,"201")
+    }
+    RunIso(WEBSTR,ISOID,flag,"download")
+   	// window.location.href=WEBSTR+"DownISO?ISOID="+ISOID+"&flag="+flag+"&ischeckarea="+ischeckarea;
+ }
+ 
+ //通过http链接迅雷下载
+  function XunLanDownISO_Http(linkObj,WEBSTR,ISOID,flag,filesize)  //flag 用于表示从本地访问或从外地访问  1：表示从本地访问  0：表示从外地访问，-1表示全国中心 访问   记录日志时需要 
+  {
+   	     if(flag==-1)
+	     {
+	      var j=GetCoordFlag_center(ISOID)
+	      var isovolume=document.getElementsByName("isovolume_center")[j].value
+	     
+	       AddSynchrRes(filesize,isovolume,"201")   //加入到同步请求表
+	     }
+	     var thunder_url="";
+          if(WEBSTR=="")
+          {
+             var locatroot=getRootPath(); //得到当前网站的主url
+             thunder_url=locatroot+"/downloadisofile?isoid="+ISOID;
+          }
+           else
+            thunder_url="http://"+WEBSTR+"/downloadisofile?isoid="+ISOID;
+	    // thunder_url=ThunderEncode(thunder_url);
+         linkObj.setAttribute("thunderHref",thunder_url);
+         OnDownloadClick_Simple(linkObj,2,4)
+     
+  
+  }
+  
+
+    function XunLanDownISO(linkObj,WEBSTR,ISOID,flag,filesize,XunLanDownType)  //flag 用于表示从本地访问或从外地访问  1：表示从本地访问  0：表示从外地访问，-1表示全国中心 访问   记录日志时需要 
+    {
+             
+ 	       
+	    // var XunLanDownType=document.getElementById("XunLanDownType").value
+	     if(flag==-1)
+	     {
+	      var j=GetCoordFlag_center(ISOID)
+	      var isovolume=document.getElementsByName("isovolume_center")[j].value
+	     
+	       AddSynchrRes(filesize,isovolume,"201")   //加入到同步请求表
+	      
+	     }
+        
+         var resultstr="";
+         var http_request = false;
+        http_request = false;
+       
+        if(window.XMLHttpRequest) 
+        { 
+            
+        	http_request = new XMLHttpRequest();
+            if (http_request.overrideMimeType) {//设置MiME类别
+                http_request.overrideMimeType("text/xml");
+            }
+            
+        }
+        else 
+        if (window.ActiveXObject)
+        { 
+            try 
+            {
+                http_request = new ActiveXObject("Msxml2.XMLHTTP");
+            } 
+            catch (e) {
+                try {
+                    http_request = new ActiveXObject("Microsoft.XMLHTTP");
+                } catch (e) {}
+            }
+        }
+        if (!http_request) {
+            return resultstr;
+        }
+        //objxml = new ActiveXObject("Microsoft.XMLDOM");
+       //objxml.async=false;
+        
+        http_request.onreadystatechange = function()
+        {
+          
+          if (http_request.readyState == 4) // 调用完毕
+          {
+             
+	          lock=0;
+	           
+	           if (http_request.status == 200) // 加载成功
+	           {
+	               var xmlstr;
+	               xmlstr=http_request.responseText;
+	               if(xmlstr!="")
+	               {
+	                  var thunder_url="";
+	                  
+	                  if(window.XMLHttpRequest)  //firfox
+	                  {
+					     if(navigator.appName=="Microsoft Internet Explorer")
+					     {
+				                 if(XunLanDownType=="0")    //FTP下载方式
+			                           thunder_url = getFtpPath(xmlstr);
+			                         if (XunLanDownType=="2")   //单资源服务器servlet下载方式
+			                          thunder_url = getHttpPath(xmlstr);
+					     }
+					     else
+					     {
+					      if(XunLanDownType=="0")    //FTP下载方式
+			                        thunder_url = getFtpPath_firfox(xmlstr);
+			                      if (XunLanDownType=="2")   //单资源服务器servlet下载方式
+			                        thunder_url = getHttpPath_firfox(xmlstr);
+			             }
+			                     
+			                  
+			          }
+	                  else
+	                  {
+	                    
+	                    if (window.ActiveXObject)  //IE
+	                    {
+		                  if(XunLanDownType=="0")    //FTP下载方式
+	                        thunder_url = getFtpPath(xmlstr);
+	                      if (XunLanDownType=="2")   //单资源服务器servlet下载方式
+	                        thunder_url = getHttpPath(xmlstr);
+	                    
+	                    }
+	                  }
+	                   
+	                  if(thunder_url!="")
+	                  {
+	                    linkObj.setAttribute("thunderHref",thunder_url);
+	                    OnDownloadClick_Simple(linkObj,2,4)
+	                    
+	                  }
+	                   else
+	                      alert("无法获取FTP地址！")
+	               }
+	               else
+	                 alert("获取FTP地址出错！")
+	           }
+	           else
+	           {
+	               alert("加载失败！")
+	           }
+           }
+         }  
+          if(WEBSTR=="")
+            url="XunLanDownISO?ISOID="+ISOID+"&flag="+flag;
+          else
+            url="CrossXunlanDownISO?uri="+WEBSTR+"&ISOID="+ISOID+"&flag="+flag;
+         
+         http_request.open("post", url,true);
+         http_request.send("");              
+
+    }
+    
+    function getFtpPath(xmlstr)
+    {
+      var queryinfoxml = new ActiveXObject("Microsoft.XMLDOM");
+      queryinfoxml.async=false;
+      queryinfoxml.loadXML(xmlstr);
+     
+      var ftppathelement = queryinfoxml.selectSingleNode("/isoresource/ftppath");
+      var ftppath="";
+      if(ftppathelement!=null)
+        ftppath=ftppathelement.text
+      return ftppath;
+        
+   
+      
+    }
+   
+    function getFtpPath_firfox(xmlstr)
+    {
+      
+      queryinfoxml = document.implementation.createDocument("text/xml", "", null);
+	  queryinfoxml.loadXML(xmlstr);
+     
+      var ftppathelement = queryinfoxml.selectSingleNode("/isoresource/ftppath");
+      var ftppath="";
+      if(ftppathelement!=null)
+        ftppath=ftppathelement.textContent; 
+      return ftppath;
+        
+   
+      
+    }
+   
+   
+   
+   function getHttpPath(xmlstr)
+    {
+      var queryinfoxml = new ActiveXObject("Microsoft.XMLDOM");
+      queryinfoxml.async=false;
+      queryinfoxml.loadXML(xmlstr);
+     
+      var httppathelement = queryinfoxml.selectSingleNode("/isoresource/httppath");
+      var httppath="";
+      if(httppathelement!=null)
+        httppath=httppathelement.text
+      return httppath;
+    }
+   
+    function getHttpPath_firfox(xmlstr)
+    {
+       queryinfoxml = document.implementation.createDocument("text/xml", "", null);
+	   queryinfoxml.loadXML(xmlstr);
+       var httppathelement = queryinfoxml.selectSingleNode("/isoresource/httppath");
+      var httppath="";
+      if(httppathelement!=null)
+        httppath=httppathelement.textContent; 
+      return httppath;
+    }
+
+    
+    function GetCoordFlag_center(isoid)
+    {
+      var j=0
+      var num=document.getElementsByName("isoid_center").length;
+ 	  for(i=0;i<num;i++)
+	  {
+	   
+		tempisoid=document.getElementsByName("isoid_center")[i].value;
+		if(isoid==tempisoid)
+		{
+		   j=i;
+		  break;
+		}
+		
+	  }
+ 	  return j
+      
+    }
+    
+     function changedispfield(flag)
+     {
+        if(flag==0)
+        {
+           document.getElementById("simplefieldtb").style.display="none";
+           document.getElementById("morefieldtb").style.display="";
+        }
+        else
+        {
+           document.getElementById("simplefieldtb").style.display="";
+           document.getElementById("morefieldtb").style.display="none";
+
+        }
+     
+     }
+     
+     function opendirwindwow(isoid,url,filesize)
+     {
+        var filename;
+        var tempisoid=GetAsciiStr(isoid);
+       
+        if(url=="")
+        {
+           var filename="browseindex2?id="+tempisoid;
+          //  dirform.action=filename;
+        }
+          
+        else
+        {
+           
+           // var tempuri=GetAsciiStr("192.168.1.55:8080/poweb1207/");
+           
+	   	      var j=GetCoordFlag_center(isoid)
+		      var isovolume=document.getElementsByName("isovolume_center")[j].value
+		      AddSynchrRes(filesize,isovolume,"202")
+           
+             var tempuri=GetAsciiStr(url);
+            filename="browseindex?id="+tempisoid+"&uri="+tempuri ;
+          
+          
+        }
+      window.open("http://" + url + "/" + filename)
+     }
+
+ function GetAsciiStr(str)
+{
+  var i;
+  var tempstr,tempstr1,resultstr="";
+  tempstr1="_"
+  
+  for(i=0;i<str.length;i++)
+  {
+    tempstr=str.charAt(i);
+    if(i==str.length-1)
+      resultstr=resultstr+tempstr.charCodeAt();
+    else
+      resultstr=resultstr+tempstr.charCodeAt()+tempstr1;
+    
+  }
+  return resultstr;
+}
+
+
+
+</script>
